@@ -10,6 +10,7 @@ let tutorials = [
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
+function titleCased (tutorials){
  tutorials = tutorials.map(function(v){
   let newTutorials=[];
   let arr = v.toLowerCase().split(' ');
@@ -19,6 +20,8 @@ let tutorials = [
   }
   return (tutorials = newTutorials);
   });
+  return tutorials;
+}
 
 
 
